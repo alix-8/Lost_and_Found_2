@@ -4,9 +4,9 @@ A PHP + SQLite web application where students or staff can post items they lost 
 
 -----
 ## To Do
-[ ] Add notifications page for user
-  [ ] Enhance UI
-[ ] Add Icons
+- [ ] Add notifications page for user
+  - [ ] Enhance UI
+- [ ] Add Icons
 
 **FEATURES:**
 - User registration and login (with password hashing)
