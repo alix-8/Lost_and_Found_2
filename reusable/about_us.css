@@ -1,0 +1,152 @@
+/* reusable/about_us.css */
+
+/* HERO BANNER */
+.hero-section {
+    background: linear-gradient(135deg, #2289e6 0%, #afdccd 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(34, 137, 230, 0.15);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #f1f5f9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* FEATURES GRID */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #2289e6;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* TEAM SECTION */
+.team-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;        
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    flex: 0 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f8fafc;
+    border: 3px solid #afdccd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #64748b;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .avatar-circle {
+    background-color: #2289e6;
+    color: white;
+    border-color: #2289e6;
+}
+
+.member-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #334155;
+    margin-bottom: 0.2rem;
+}
+
+.member-role {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Footer override for this page */
+.about-footer {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+
+/* FAQ SECTION */
+.faq-section {
+    max-width: 800px;
+    margin: 5rem auto;
+    text-align: left;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #334155;
+}
+
+/*Bootstrap Accordion*/
+.accordion-button:not(.collapsed) {
+    background-color: #f0f9ff;
+    color: #2289e6; 
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(34, 137, 230, 0.1);
+}
+
+.accordion-item {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}

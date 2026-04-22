@@ -1,0 +1,60 @@
+:root {
+    /* ===== PRIMARY COLOR (BRAND) ===== */
+    --color-primary-gradient: linear-gradient(to right,  #ceede3,#afdccd, #2289e6);
+    --blue-primary: #2289e6;
+
+    /* ===== FOR BUTTONS AND POP-UPS ===== */
+    --button: #afdccd;   /* pearl aqua — dashboard buttons + hover */
+    --button-hover: #ceede3;
+    --bg: #f8f8f8;  /* grey — popups, dropdown, sidebar, footer text */
+    --gray-text: #7b7979;
+
+     /* ===== STATUS COLORS ===== */
+    --lost-color:    #ff0000;
+    --found-color:   #2289e6;
+    --claimed-color: #558d57;
+    --pending-color: #ffa629;
+}
+
+.search-filter-container form {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+
+button.searchBtn {
+    background-color: var(--blue-primary) !important; 
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.search-filter-container{
+    background-color: #f8f8f8;
+    border: 1px solid #a9a8a8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#filterStatus, #filterCategory {
+    border-color: var(--blue-primary); 
+    padding: 8px 12px !important;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    
+    .heroSection {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #postItems{
+        margin-top: 2vh;
+        padding: 0.5rem;
+        width: 20vw;
+        height: min-content;
+    }
+}

@@ -1,0 +1,147 @@
+:root {
+    /* ===== PRIMARY COLOR (BRAND) ===== */
+    --color-primary: #2289e6;     /* brilliant azure — buttons, header, footer, logo */
+    --color-primary-gradient: linear-gradient(to right,  #ceede3,#afdccd, #2289e6);
+
+    /* ===== FOR BUTTONS AND POP-UPS ===== */
+    --color-ui-accent: #afdccd;   /* pearl aqua — dashboard buttons + hover */
+    --color-ui-surface: #f8f8f8;  /* grey — popups, dropdown, sidebar, footer text */
+        --gray-text: #7b7979;
+
+     /* ===== STATUS COLORS ===== */
+    --lost-color:    #ff0000;
+    --found-color:   #2289e6;
+    --claimed-color: #558d57;
+    --pending-color: #ffa629;
+}
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+    background: linear-gradient(to left,  #ceede3,#afdccd, #8bcdb7, #228be6c5);
+    display: flex;
+    flex-direction: column;
+}
+
+#learnmore{
+    color: var(--color-primary);
+    background-color: #f8f8f8;
+    width: fit-content;
+    text-decoration: none;
+}
+
+#learnmore:hover{
+    color: var(--color-primary);
+    background-color: #cecece;
+    text-decoration: none;
+}
+
+.lm{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.find{
+    color: var(--blue-primary);
+}
+
+
+.section1 {
+    margin: 15rem 0 !important;
+}
+
+.logo-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img h1 {
+  /* display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 20vh; */
+  font-size: 12vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo-img img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.find{
+    color: var(--color-primary);
+}
+
+.slogan{
+    color: #424242;
+    text-align: center;
+    font-size: 15px;
+    padding: 4px 8px !important;
+    background-color: #e2e8f0;
+    opacity: 70%;
+    border-radius: 19px;
+}
+
+
+/* OUR MISSION NA PART */
+.hero-section {
+    background: white !important;
+    border-radius: 20px !important;
+    margin: 3rem 0 !important;
+    box-shadow: 0 4px 15px rgba(34, 137, 230, 0.15);
+}
+
+.hero-section p{
+    color: rgb(91, 91, 91) !important;
+}
+
+.mision{
+    color: #4a4a4a;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions{
+    flex-direction: row;
+}
+
+.actions a{
+    width: 10vw !important;
+}
+
+.actions a:hover{
+    text-decoration: none;
+}
+
+.container-index {
+  display: flex;
+
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 400px;
+}
+
+footer{
+    background-color: #f8f8f8 !important;
+}
+
+.layer1{
+    border: none !important;
+}

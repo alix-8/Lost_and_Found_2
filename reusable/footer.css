@@ -1,0 +1,29 @@
+/* Reusable footer: SAME for user/admin */
+
+footer{
+    background-color: white;
+    color: rgb(99, 99, 99);
+    margin-top: 1vh;
+    padding:2rem
+}
+
+.layer2 {
+    border-top: solid 1px gray;
+}
+
+.layer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.brand, .qlinks, .contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2vh;
+}
+
+.layer2{
+    padding: 3vh;
+    text-align: center;
+}

@@ -1,0 +1,168 @@
+/* Reusable header, navigation and buttons css for user/admin */
+
+:root {
+    /* ===== PRIMARY COLOR (BRAND) ===== */
+    --color-primary-gradient: linear-gradient(to right,  #ceede3,#afdccd, #2289e6);
+    --blue-primary: #2289e6;
+
+    /* ===== FOR BUTTONS AND POP-UPS ===== */
+    --button: #afdccd;   /* pearl aqua — dashboard buttons + hover */
+    --button-hover: #ceede3;
+    --bg: #f8f8f8;  /* grey — popups, dropdown, sidebar, footer text */
+    --gray-text: #7b7979;
+
+     /* ===== STATUS COLORS ===== */
+    --lost-color:    #ff0000;
+    --found-color:   #2289e6;
+    --claimed-color: #558d57;
+    --pending-color: #ffa629;
+}
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background:linear-gradient(to right, #e7edeb 0%, #ecf6fe 50%, #c7f2e4 100%);
+  background-attachment: fixed;
+}
+
+/* NAVIGATIONNN */
+.navbar .container-fluid { flex-wrap: nowrap !important; }
+.navbar .navbar-brand, .navbar .navbar-text, .navbar .notif { white-space: nowrap !important; }
+
+.navbar .navbar-toggler { flex: 0 0 auto !important; }
+.navbar .ms-auto { margin-left: auto !important; }
+.navbar-brand {
+    font-size: 20px !important;
+}
+
+.find{
+    color: var(--blue-primary);
+}
+
+nav{
+    background: var(--color-primary-gradient);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.notif{
+    color: var(--gray-text) !important;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(234, 234, 234, 0.639);
+    border-radius: 12px;
+}
+
+.notif:hover{
+    background-color: rgba(255, 255, 255, 0.831);
+}
+
+#postItems {
+    background-color: var(--blue-primary);
+    width: 100%;
+}
+
+#postItems:focus,
+#postItems:active{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* button 'to para sa "see details" */
+#seeDetails {
+    color: black;
+    background-color: var(--button);
+    border: none;
+}
+
+#seeDetails:hover {
+    background-color: var(--button-hover);
+}
+
+.offcanvas {
+    width:200px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.offcanvas-body {
+    font-size: 1.20rem;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: black;
+    padding: 0 2px 0 3px;
+    border-radius: 2px;
+}
+
+.offcanvas-body a:hover{
+    color: white;
+    background-color: var(--button);
+}
+
+.logout{
+    color: var(--lost-color) !important;
+}
+
+.logout:hover{
+    background-color:#6b6b6b !important;
+}
+
+.offcanvas-body a{
+    margin: 5px 0 5px 0
+}
+
+/* para sa close button ng alert message */
+.alrtsuccess {
+    color: white !important;
+    background-color: rgb(36, 219, 79) !important;
+}
+
+.alrtnotsuccess {
+    color: white !important;
+    background-color: rgb(219, 39, 36) !important;
+}
+
+.alert .btn-close {
+    float: right;
+}
+
+.subtext {
+    color: var(--gray-text);
+}
+
+.search-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-select option{
+    background-color: var(--bg) !important;
+    border-radius: 8px !important;
+}
+
+.form-select option:hover{
+    background-color: var(--button) !important;
+}
+
+.noItemFound{
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
