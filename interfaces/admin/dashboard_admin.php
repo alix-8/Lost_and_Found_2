@@ -280,7 +280,7 @@ $sql .= " ORDER BY items.id DESC";
             <a class="logout" href="../../logout.php" onclick = "return confirm('Are you sure you want to LOG OUT?');">Log out</a>
         </div>
     </div>
-    <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Campus<span class = "find">Find</a></strong>
+    <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Found<span class = "Box">Box</a></strong>
 
     <?php 
     $adminId = $_SESSION['user']['id']; 
@@ -292,7 +292,7 @@ $sql .= " ORDER BY items.id DESC";
     ?>
 
     <div class = "ms-auto">
-        <a href="myposts_admin.php" class="notif mx-4">
+        <a href="notifications_admin.php" class="notif mx-4">
             🔔<?= $notifCount ?>
         </a>
         <a class="navbar-brand text-white" href="#">Hello, <?php echo htmlspecialchars($admin["username"]); ?></a>

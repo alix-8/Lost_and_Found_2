@@ -31,7 +31,7 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Us - CampusFind</title>
+    <title>About Us - FoundBox</title>
     <link rel="icon" type="image/x-icon" href="../../assets/search.png">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
                     <a class="logout" href="../../logout.php" onclick="return confirm('Are you sure you want to LOG OUT?');">Log out</a>
                 </div>
             </div>
-            <strong><a class="navbar-brand me-auto" href="dashboard_user.php">Campus<span class="find">Find</span></a></strong>
+            <strong><a class="navbar-brand me-auto" href="dashboard_user.php">Found<span class="find">Box</span></a></strong>
             
             <?php 
             $notifCount = $db->querySingle("
@@ -108,40 +108,6 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
                 <div class="feature-icon">🤝</div>
                 <h4>Secure Claim</h4>
                 <p class="text-secondary">A verified process to ensure items return to their rightful owners.</p>
-            </div>
-        </div>
-
-        <!-- TEAM SECTION -->
-        <div class="team-section">
-            <h2 class="mb-2">Meet the Team</h2>
-            <p class="text-secondary mb-4">The developers behind the project</p>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="avatar-circle">A</div>
-                    <div class="member-name">Alexandrian Bon</div>
-                    <div class="member-role">Developer / Project Manager</div>
-                </div>
-                <div class="team-member">
-                    <div class="avatar-circle">A</div>
-                    <div class="member-name">Anne Stephanne Buenaflor</div>
-                    <div class="member-role">Developer / Designer</div>
-                </div>
-                <div class="team-member">
-                    <div class="avatar-circle">J</div>
-                    <div class="member-name">Jess Carbonel</div>
-                    <div class="member-role">Logic / Backend</div>
-                </div>
-                <div class="team-member">
-                    <div class="avatar-circle">J</div>
-                    <div class="member-name">Jay R Santos</div>
-                    <div class="member-role">Backend / DB</div>
-                </div>
-                <div class="team-member">
-                    <div class="avatar-circle">M</div>
-                    <div class="member-name">Mel Magdaraog</div>
-                    <div class="member-role">Developer</div>
-                </div>
             </div>
         </div>
 
@@ -190,7 +156,7 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            The main office is located at the <strong>Student Affairs Building, Room 101</strong>. We are open from 8:00 AM to 5:00 PM, Monday to Friday.
+                            The main office is located at _____. You can also contact them at _____.
                         </div>
                     </div>
                 </div>
@@ -219,8 +185,9 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
         <!-- FOOTER -->
         <div class="layer1">
             <div class="brand">
-                <h4>Campus<span class="find">Find</span></h4>
-                Your Campus Lost & Found Hub. Helping students and staff reunite with their lost items quickly and easily.
+                <h4>Found<span class="find">Box</span>
+            </h4>
+                Your Lost & Found Hub. Helping people reunite with their lost items quickly and easily.
             </div>
             <div class="qlinks">
                 <strong>Quick Links</strong>
@@ -231,11 +198,11 @@ while ($n = $notifQuery->fetchArray(SQLITE3_ASSOC)) {
                 <strong>Contact</strong>
                 Lost & Found Office
                 Main Building, Room 101
-                campusfind@university.edu
+                FoundBox@university.edu
             </div>
         </div>
         <div class="layer2">
-            &copy 2025 CampusFind. All rights reserved.
+            &copy 2025 FoundBox. All rights reserved.
         </div>
         
     </footer>

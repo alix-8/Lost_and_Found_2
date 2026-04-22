@@ -275,7 +275,7 @@ $sql .= " ORDER BY items.id DESC";
                 <a class="logout" href="../../logout.php" onclick = "return confirm('Are you sure you want to LOG OUT?');">Log out</a>
             </div>
         </div>
-        <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Campus<span class = "find">Find</a></strong>
+        <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Found<span class = "find">Box</a></strong>
 
         <?php 
         $adminId = $_SESSION['user']['id']; 
@@ -286,7 +286,7 @@ $sql .= " ORDER BY items.id DESC";
         ");
         ?>
         <div class = "ms-auto">
-            <a href="myposts_admin.php" class="notif mx-4">
+            <a href="notifications_admin.php" class="notif mx-4">
                 🔔<?= $notifCount ?>
             </a>
             <a class="navbar-brand text-white" href="#">Hello, <?php echo htmlspecialchars($admin["username"]); ?></a>
@@ -618,38 +618,11 @@ $sql .= " ORDER BY items.id DESC";
         <!-- NOTIFICATIONS HEREEE -->
          <!-- ================= -->   
         <!-- card -->
-        <div class="notifications row mt-5">
-             <h3><strong>
-                <img src="/assets/bell.png" alt="bell" style="width:25px">
-                My Notifications
-            </strong></h3>
-            <?php if (empty($adminNotifications)): ?>
-                <p class="text-muted">No notifications yet.</p>
-            <?php else: ?>
-               
-                <?php foreach ($adminNotifications as $note): ?>
-                    <div class="col-md-6">
-                        <a href="../admin/dashboard_admin.php#item-<?= $note['item_id']; ?>"
-                        class="text-decoration-none text-dark">
-
-                            <div class="notificationCard p-3 my-2 w-100">
-
-                                <strong><?= htmlspecialchars($note['item_title']); ?></strong>
-
-                                <p class="mb-1">
-                                    <?= htmlspecialchars($note['message']); ?>
-                                </p>
-
-                                <small class="text-secondary">
-                                    <?= $note["created_at"]; ?>
-                                </small>
-
-                            </div>
-
-                        </a>
-                    </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
+        <div class="mt-4">
+            <a href="notifications_admin.php" class="btn btn-outline-primary">
+                <img src="/assets/bell.png" alt="bell" style="width:18px"> 
+                View All Notifications
+            </a>
         </div>
 
 

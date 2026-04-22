@@ -280,7 +280,7 @@ $sql .= " ORDER BY items.id DESC";
             </div>
             
         </div>
-        <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Campus<span class = "find">Find</a></strong>
+        <strong><a class="navbar-brand me-auto d-none d-md-inline" href="#">Found<span class = "find">Box</a></strong>
 
         <?php $userId = $_SESSION['user']['id']; 
         $notifCount = $db->querySingle("
